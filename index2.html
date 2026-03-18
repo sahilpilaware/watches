@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Watch Store</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins', sans-serif;
+background:#0f0f0f;
+color:white;
+}
+
+/* Header */
+
+header{
+background:black;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+color:gold;
+font-family:'Playfair Display', serif;
+letter-spacing:2px;
+}
+
+/* Navigation */
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-size:16px;
+font-family:'Poppins', sans-serif;
+}
+
+nav a:hover{
+color:gold;
+}
+
+/* Hero Section */
+
+.hero{
+height:400px;
+background:url('https://images.unsplash.com/photo-1523275335684-37898b6baf30') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+background:rgba(0,0,0,0.6);
+padding:20px;
+font-family:'Playfair Display', serif;
+letter-spacing:3px;
+}
+
+/* Sections */
+
+.section{
+padding:50px;
+text-align:center;
+}
+
+.section h2{
+font-family:'Playfair Display', serif;
+font-size:36px;
+letter-spacing:2px;
+}
+
+/* Products */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#1c1c1c;
+border-radius:10px;
+padding:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.price{
+color:gold;
+font-size:20px;
+margin:10px 0;
+}
+
+button{
+background:gold;
+border:none;
+padding:10px 20px;
+font-weight:bold;
+cursor:pointer;
+border-radius:5px;
+font-family:'Poppins', sans-serif;
+}
+
+button:hover{
+background:#d4af37;
+}
+
+/* Contact */
+
+.contact{
+background:#111;
+padding:50px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:none;
+border-radius:5px;
+font-family:'Poppins', sans-serif;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+color:gray;
+font-family:'Poppins', sans-serif;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Luxury Souq</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#men">Men</a>
+<a href="#women">Women</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Luxury Watches Collection</h1>
+</section>
+
+<section id="men" class="section">
+
+<h2>Men's Watches</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa">
+<h3>Rolex Classic</h3>
+<p class="price">₹458900</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="WAT.webp">
+<h3>Patek PhillipPe</h3>
+<p class="price">₹8865900</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="rm.webp">
+<h3>Richard Mille</h3>
+<p class="price">₹789000</p>
+<button>Buy Now</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="women" class="section">
+
+<h2>Women's Watches</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="watchh.webp">
+<h3>Rose Gold Lady</h3>
+<p class="price">₹660000</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3">
+<h3>Diamond Queen</h3>
+<p class="price">₹590000</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade">
+<h3>Silver Elegance</h3>
+<p class="price">₹49,9999</p>
+<button>Buy Now</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Luxury Watch Store</p>
+</footer>
+
+</body>
+</html>
